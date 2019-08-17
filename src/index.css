@@ -1,6 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Mr+De+Haviland&display=swap');
+
 * {
   padding: 0;
   margin: 0;
+}
+
+body, html {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.1rem;
 }
 
 /* HEADER  */
@@ -25,6 +32,12 @@
 }
 
 /* LOGIN  */
-.login {
-  
+.login form {
+  padding-top: 2rem;
+}
+.login label {
+  margin-right: .6rem;
+}
+.login input {
+  display: inline;
 }
