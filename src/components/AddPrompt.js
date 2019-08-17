@@ -31,14 +31,18 @@ class AddPrompt extends React.Component {
 
   render(){
     return(
-      <div className="newPrompt">
+      <div className="newPrompt container">
       {this.state.newP}
           <form onSubmit={this.addNewPrompt}>
-            <label>Add your prompt</label>
+          <div class="form-group">
+
+            <label> Add your prompt </label>
             <textarea
+              className="form-control"
               value={this.state.newP}
               onChange={this.handleChange}
             />
+          </div>
             <button type="submit" className="btn newPromptBtn">submit</button>
           </form>
 
