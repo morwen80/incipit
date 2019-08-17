@@ -25,8 +25,9 @@ if (currentUser) {
 }
 
   return(
-    <div>
-      <h1>Login In</h1>
+    <div className="container login">
+      <h3>You need to be logged in to add a new prompt</h3>
+
       <form onSubmit={handleLogin}>
       <label> Email
         <input name="email" type="email" placeholder="email" />

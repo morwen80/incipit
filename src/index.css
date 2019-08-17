@@ -3,6 +3,10 @@
   margin: 0;
 }
 
+/* HEADER  */
+.nav {
+  display: inline;
+}
 /* HOME */
 .home {
   display: flex;
@@ -18,4 +22,9 @@
   border: 2px dashed black;
   margin: 1rem 0 0 0;
   padding: 1rem;
+}
+
+/* LOGIN  */
+.login {
+  
 }
