@@ -1,5 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Miss+Fajardose|Mr+De+Haviland&display=swap');
 
+:root {
+  --light1: #E7F0F1;
+  --light2: #9FC4C6;
+  --medium1: #57989D;
+  --medium2: #317A82;
+  --dark1: #20575C;
+  --dark2: #164045;
+
+  --grey1: #a5a5a5;
+  --grey2: #515354;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -18,6 +30,7 @@ body, html {
   display: inline-block;
   margin-top: -1rem;
   transform: rotate(-5deg);
+  color: var(--dark2);
 }
 .header h2 {
   text-align: center;
@@ -27,19 +40,19 @@ body, html {
   position: absolute;
   top: 1px;
   right: 1px;
+  border: none;
 }
 
 
 
 /* HOME */
 .home {
-  border: 1px solid green;
+  border: 1px solid var(--dark1);
   padding: 0;
-   box-sizing: content-box;
 }
 .main {
   padding: 1rem;
-   box-sizing: content-box;
+  box-sizing: content-box;
 }
 
 /* .btns {
@@ -59,7 +72,12 @@ flex-wrap: wrap;
 }
 .btns .random {
   float: left;
+  background-color: var(--light1);
 }
+.newBtn {
+  background-color: var(--light2);
+}
+
 /* LOGIN  */
  .login form {
   padding-top: 2rem;

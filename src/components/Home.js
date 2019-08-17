@@ -29,17 +29,15 @@ randomPrompt = (e) => {
       <div className="home container">
 
         <div className="btns">
-          <button className="random btn btn-primary" onClick={this.randomPrompt}>random prompt</button>
-          <Link to="/new"> <button className="btn btn-warning">add prompt</button> </Link>
+          <button className="random btn" onClick={this.randomPrompt}>random prompt</button>
+          <Link to="/new"> <button className="btn newBtn">add prompt</button> </Link>
         </div>
-        <div className="row">
-          <div className="main col-md-12 main">
+          <div className="main">
             <div className="promptSpace">
               {this.state.hello}
               {this.state.prompt.prompt}
             </div>
           </div>
-        </div>
     </div>
     )
   }
