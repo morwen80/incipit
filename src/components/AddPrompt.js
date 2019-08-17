@@ -39,7 +39,7 @@ class AddPrompt extends React.Component {
               value={this.state.newP}
               onChange={this.handleChange}
             />
-            <button type="submit">submit</button>
+            <button type="submit" className="btn newPromptBtn">submit</button>
           </form>
 
       </div>

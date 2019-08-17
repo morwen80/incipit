@@ -27,7 +27,7 @@ if (currentUser) {
 
   return(
     <div className="container login">
-      <h4>You need to be logged in to add a new prompt</h4>
+      <h5>You need to be logged in to add a new prompt</h5>
       <hr />
       <h6>New here? <Link to='/signup'>Create an account</Link>.</h6>
 
@@ -40,7 +40,7 @@ if (currentUser) {
           <label> Password </label>
           <input className="form-control" name="password" type="password" placeholder="password" />
       </div>
-      <button type="submit" className="btn btn-primary">Log in</button>
+      <button type="submit" className="btn loginBtn">Log in</button>
       </form>
       </div>
   )

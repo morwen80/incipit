@@ -22,6 +22,9 @@ body, html {
   font-size: 1.1rem;
 }
 
+a:active, a:visited {
+  color: var(--medium2);
+}
 /* HEADER  */
 
 .header .brand {
@@ -41,8 +44,8 @@ body, html {
   top: 1px;
   right: 1px;
   border: none;
+  color: var(--medium2);
 }
-
 
 
 /* HOME */
@@ -54,13 +57,6 @@ body, html {
   padding: 1rem;
   box-sizing: content-box;
 }
-
-/* .btns {
-width: 100%;
-display: flex;
- flex-flow: column wrap;
-flex-wrap: wrap;
-} */
 
 .btns button {
   height: 3rem;
@@ -82,10 +78,11 @@ flex-wrap: wrap;
  .login form {
   padding-top: 2rem;
 }
-.login button {
+.loginBtn {
   margin-top: 1rem;
+  background-color: var(--medium2);
+  color: var(--light1);
 }
-
 
 
 /* MEDIA QUERIES =============== */
