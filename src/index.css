@@ -11,33 +11,58 @@ body, html {
 }
 
 /* HEADER  */
-.nav {
-  display: inline;
+
+.header .brand {
+  font-family: 'Mr De Haviland', cursive;
+  font-size: 5rem;
+  text-align: center;
+}
+.header h3 {
+  text-align: center;
+  font-size: 1.4rem;
 }
 /* HOME */
 .home {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
+  border: 1px solid green;
+  padding: 0;
+   box-sizing: content-box;
 }
-
-.side {
-  flex-direction: column;
-}
-
 .main {
-  border: 2px dashed black;
-  margin: 1rem 0 0 0;
   padding: 1rem;
+   box-sizing: content-box;
 }
 
+/* .btns {
+width: 100%;
+display: flex;
+ flex-flow: column wrap;
+flex-wrap: wrap;
+} */
+
+.btns button {
+  height: 3rem;
+  width: 50%;
+  border-radius: 0;
+  margin: 0;
+  padding: 0;
+  font-weight: 900;
+}
+.btns .random {
+  float: left;
+}
 /* LOGIN  */
-.login form {
+ .login form {
   padding-top: 2rem;
 }
-.login label {
-  margin-right: .6rem;
+.login button {
+  margin-top: 1rem;
 }
-.login input {
-  display: inline;
+
+
+
+/* MEDIA QUERIES =============== */
+@media only screen and (max-width: 600px) {
+  .btns button {
+    width: 100%;
+  }
 }

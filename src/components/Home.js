@@ -19,7 +19,7 @@ randomPrompt = (e) => {
         prompt: data[Math.floor(Math.random() * data.length)],
         hello: ""
       })
-)
+    )
   }
 
 
@@ -27,22 +27,19 @@ randomPrompt = (e) => {
   render(){
     return(
       <div className="home container">
-      <div className="row">
-        <div className="side col-md-2">
-          <button className="btn btn-primary" onClick={this.randomPrompt}>random prompt</button>
 
-          <Link to="/new">
-            <button className="btn btn-warning">add prompt</button>
-          </Link>
-
-      </div>
-      <div className="main col-md-10 main">
-        <div className="promptSpace">
-          {this.state.hello}
-          {this.state.prompt.prompt}
-      </div>
-      </div>
-      </div>
+        <div className="btns">
+          <button className="random btn btn-primary" onClick={this.randomPrompt}>random prompt</button>
+          <Link to="/new"> <button className="btn btn-warning">add prompt</button> </Link>
+        </div>
+        <div className="row">
+          <div className="main col-md-12 main">
+            <div className="promptSpace">
+              {this.state.hello}
+              {this.state.prompt.prompt}
+            </div>
+          </div>
+        </div>
     </div>
     )
   }

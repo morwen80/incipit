@@ -42,7 +42,6 @@ if (currentUser) {
       </div>
       <button type="submit" className="btn btn-primary">Log in</button>
       </form>
-
       </div>
   )
 }
