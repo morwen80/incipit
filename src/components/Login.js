@@ -27,9 +27,9 @@ if (currentUser) {
 
   return(
     <div className="container login">
-      <h3>You need to be logged in to add a new prompt</h3>
+      <h4>You need to be logged in to add a new prompt</h4>
       <hr />
-      New here? <Link to='/signup'>Create an account</Link>.
+      <h6>New here? <Link to='/signup'>Create an account</Link>.</h6>
 
       <form onSubmit={handleLogin}>
         <div class="form-group">

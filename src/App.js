@@ -13,8 +13,8 @@ import Header from './components/Header';
 const App = () => {
   return (
     <AuthProvider>
-    <Header />
     <Router>
+    <Header />
         <Route exact path='/' component={Home} />
         <Route exact path='/login' component={Login} />
         <Route exact path='/signup' component={Signup} />
