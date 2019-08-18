@@ -4,14 +4,15 @@ class AddPrompt extends React.Component {
   constructor(props){
     super(props)
     this.state = {
-      newP: ''
+      newP: '',
+      writer: 'Anonymous'
     }
   }
 
   handleChange = (e) => {
     e.preventDefault();
     this.setState({
-      newP: e.target.value
+      [e.target.key]: e.target.value
     })
   }
 
@@ -23,7 +24,7 @@ class AddPrompt extends React.Component {
     'Accept': 'application/json',
     'Content-Type': 'application/json'
   },
-    body: JSON.stringify({prompt: this.state.newP})
+    body: JSON.stringify({prompt: this.state.newP, writer: this.state.writer})
   })
     .then(resp => resp.json())
     .then(console.log("data added"))
@@ -42,6 +43,11 @@ class AddPrompt extends React.Component {
               value={this.state.newP}
               onChange={this.handleChange}
             />
+          </div>
+          <div>
+          <label> Writer
+            <input className="form-control" name="writer" type="writer" placeholder="writer" value={this.state.writer} />
+          </label>
           </div>
             <button type="submit" className="btn newPromptBtn">submit</button>
           </form>

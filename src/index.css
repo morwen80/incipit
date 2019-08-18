@@ -75,9 +75,26 @@ a:active, a:visited {
   background-color: var(--light2);
 }
 
+/* SIGNUP */
+.signupBtn {
+  background-color: var(--dark1);
+  color: var(--light1);
+}
+
+.signup {
+  width: 50%;
+}
+.signup form {
+  padding-top: 2.5rem;
+}
+
 /* LOGIN  */
+.login {
+  width: 50%;
+}
+
  .login form {
-  padding-top: 2rem;
+  padding-top: 2.5rem;
 }
 .loginBtn {
   margin-top: 1rem;
@@ -99,6 +116,10 @@ a:active, a:visited {
 /* MEDIA QUERIES =============== */
 @media only screen and (max-width: 600px) {
   .btns button {
+    width: 100%;
+  }
+
+  .login, .signup {
     width: 100%;
   }
 }
