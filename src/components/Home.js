@@ -11,7 +11,7 @@ class Home extends React.Component {
 
 randomPrompt = (e) => {
     e.preventDefault();
-    fetch('http://localhost:3000/prompts')
+    fetch('https://incipit-server.herokuapp.com/prompts')
     .then(resp => resp.json())
     .then(data => this.setState({
         prompt: data[Math.floor(Math.random() * data.length)],
@@ -27,7 +27,7 @@ randomPrompt = (e) => {
   }
 
   updatePrompt = (prompt) => {
-    fetch(`http://localhost:3000/prompts/${prompt._id}`, {
+    fetch(`https://incipit-server.herokuapp.com/prompts/${prompt._id}`, {
       method: 'PUT',
       headers: {
     'Accept': 'application/json',
