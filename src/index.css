@@ -108,15 +108,31 @@ a:active, a:visited {
 .singlePrompt {
   padding: 1rem 1rem .1rem 1rem;
 }
-.singlePrompt .fa-heart {
+.singlePrompt button {
   display: inline-block;
   float: right;
   font-size: 1.3rem;
   color: var(--grey1);
+  border: none;
+  -webkit-transition: transform .6s;
+  transition: transform .6s;
 }
-.fa-heart:hover {
+.singlePrompt button:hover {
   color: var(--dark1);
+  transform: scale(1.7);
 }
+
+
+/* @keyframes likeButton {
+  from {
+    background-color: var(--grey1);
+    font-size: 1.3rem;
+  }
+  to {background-color: var(--dark1);
+      font-size: 2.2rem;
+  };
+} */
+
 .fa-user {
   font-weight: 700;
   color: var(--medium2);
