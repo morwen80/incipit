@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Miss+Fajardose|Mr+De+Haviland&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:Montserrat:400,700,900|Miss+Fajardose|Mr+De+Haviland&display=swap');
 
 :root {
   --light1: #E7F0F1;
@@ -102,6 +102,19 @@ a:active, a:visited {
   color: var(--light1);
 }
 
+/* SINGLE PROMPT */
+.fa-user {
+  font-weight: 700;
+  color: var(--medium2);
+  margin-right: .6rem;
+}
+.likesNum {
+  padding: .1rem 1rem;
+  margin-left: .6rem;
+  border-radius: 5px;
+  background-color: var(--medium2);
+  color: var(--light1);
+}
 /* NEW PROMPT */
 .newPrompt {
   width: 50%;
@@ -111,7 +124,6 @@ a:active, a:visited {
   font-size: 1.5rem;
   font-weight: 700;
 }
-
 
 .newPromptBtn {
   background-color: var(--medium2);

@@ -12,22 +12,27 @@ class AddPrompt extends React.Component {
   handleChange = (e) => {
     e.preventDefault();
     this.setState({
-      [e.target.key]: e.target.value
+      [e.target.name]: e.target.value
     })
   }
 
   addNewPrompt = (e) => {
     e.preventDefault();
+    const newPrompt = {
+      prompt: this.state.newP,
+      writer: this.state.writer,
+      likes: 1
+    }
     fetch("http://localhost:3000/prompts", {
       method: 'POST',
       headers: {
     'Accept': 'application/json',
     'Content-Type': 'application/json'
   },
-    body: JSON.stringify({prompt: this.state.newP, writer: this.state.writer})
+    body: JSON.stringify(newPrompt)
   })
     .then(resp => resp.json())
-    .then(console.log("data added"))
+    .then(this.props.history.push('/'))
   }
 
   render(){
@@ -38,6 +43,7 @@ class AddPrompt extends React.Component {
 
             <label> Add your prompt </label>
             <textarea
+              name="newP"
               className="form-control"
               value={this.state.newP}
               onChange={this.handleChange}
@@ -46,7 +52,6 @@ class AddPrompt extends React.Component {
           <div>
           <label>Writer
             <input
-
               className="form-control input-lg"
               name="writer"
               placeholder="writer"
