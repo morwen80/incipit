@@ -20,6 +20,7 @@
 body, html {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.1rem;
+  color: var(--grey2);
 }
 
 a:active, a:visited {
@@ -27,7 +28,6 @@ a:active, a:visited {
 }
 
 /* HEADER  */
-
 .header .brand {
   font-family: 'Miss Fajardose', cursive;
   font-size: 5rem;
@@ -38,7 +38,8 @@ a:active, a:visited {
 }
 .header h2 {
   text-align: center;
-  padding-bottom: 2rem;
+  padding-bottom: 2.5rem;
+  color: var(--dark2);
 }
 .logoutBtn {
   position: absolute;
@@ -66,6 +67,7 @@ a:active, a:visited {
   margin: 0;
   padding: 0;
   font-weight: 900;
+  color: var(--dark2);
 }
 .btns .random {
   float: left;
@@ -103,6 +105,18 @@ a:active, a:visited {
 }
 
 /* SINGLE PROMPT */
+.singlePrompt {
+  padding: 1rem 1rem .1rem 1rem;
+}
+.singlePrompt .fa-heart {
+  display: inline-block;
+  float: right;
+  font-size: 1.3rem;
+  color: var(--grey1);
+}
+.fa-heart:hover {
+  color: var(--dark1);
+}
 .fa-user {
   font-weight: 700;
   color: var(--medium2);
@@ -132,6 +146,11 @@ a:active, a:visited {
 
 /* MEDIA QUERIES =============== */
 @media only screen and (max-width: 600px) {
+  .header h2 {
+    margin-top: 2rem;
+    padding-bottom: 1.5rem;
+  }
+
   .btns button {
     width: 100%;
   }

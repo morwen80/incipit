@@ -11,7 +11,6 @@ class Home extends React.Component {
 
 randomPrompt = (e) => {
     e.preventDefault();
-
     fetch('http://localhost:3000/prompts')
     .then(resp => resp.json())
     .then(data => this.setState({
@@ -21,12 +20,26 @@ randomPrompt = (e) => {
     )
   }
 
+  incrementLike = () => {
+    this.setState({ likes: this.state.prompt.likes++});
+    this.updatePrompt(this.state.prompt);
+  }
+
+  updatePrompt = (prompt) => {
+    fetch(`http://localhost:3000/prompts/${prompt._id}`, {
+      method: 'PUT',
+      headers: {
+    'Accept': 'application/json',
+    'Content-Type': 'application/json'
+  },
+    body: JSON.stringify( prompt )
+  })
+    .then(resp => resp.json())
+  }
+
   render(){
-
-
     return(
       <div className="home container">
-
         <div className="btns">
           <button className="random btn" onClick={this.randomPrompt}>random prompt</button>
           <Link to="/new"> <button className="btn newBtn">add prompt</button> </Link>
@@ -37,6 +50,8 @@ randomPrompt = (e) => {
 
               <SinglePrompt
                 prompt={this.state.prompt}
+                incrementLike={this.incrementLike}
+                updatePrompt={this.updatePrompt}
               /> :
             this.state.hello
             }
