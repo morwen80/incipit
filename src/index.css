@@ -27,6 +27,16 @@ a:active, a:visited {
   color: var(--medium2);
 }
 
+.newPromptBtn, .loginBtn, .signupBtn {
+  margin-top: 1rem;
+  background-color: var(--medium2);
+  color: var(--light1);
+}
+
+.newPromptBtn:hover, .loginBtn:hover, .signupBtn:hover {
+  background-color: var(--dark2);
+}
+
 /* HEADER  */
 .header .brand {
   font-family: 'Miss Fajardose', cursive;
@@ -78,10 +88,6 @@ a:active, a:visited {
 }
 
 /* SIGNUP */
-.signupBtn {
-  background-color: var(--dark1);
-  color: var(--light1);
-}
 
 .signup {
   width: 50%;
@@ -98,11 +104,8 @@ a:active, a:visited {
  .login form {
   padding-top: 2.5rem;
 }
-.loginBtn {
-  margin-top: 1rem;
-  background-color: var(--medium2);
-  color: var(--light1);
-}
+
+
 
 /* SINGLE PROMPT */
 .singlePrompt {
@@ -155,10 +158,7 @@ a:active, a:visited {
   font-weight: 700;
 }
 
-.newPromptBtn {
-  background-color: var(--medium2);
-  color: var(--light1);
-}
+
 
 /* MEDIA QUERIES =============== */
 @media only screen and (max-width: 600px) {

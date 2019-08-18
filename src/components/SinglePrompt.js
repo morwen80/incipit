@@ -2,7 +2,6 @@ import React from 'react';
 
 
 const SinglePrompt = (props) => {
-
   const { incrementLike, prompt } = props
 
   return(
