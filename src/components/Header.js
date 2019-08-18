@@ -8,8 +8,8 @@ const Header = () => {
     <nav >
       <NavLink activeClassName="is-active" to='/' exact={true} > <h1 className="brand">incipit</h1> </NavLink>
     </nav>
-    <h2>A Writing Prompt Generator</h2>
-    <button className="logoutBtn btn " onClick={() => app.auth().signOut()}>Logout <i class="fas fa-sign-out-alt"></i></button>
+    <h2> A Writing Prompt Generator </h2>
+    <button className="logoutBtn btn " onClick={() => app.auth().signOut()}>Logout <i className="fas fa-sign-out-alt"></i></button>
 
     </div>
   )

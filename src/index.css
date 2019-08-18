@@ -25,6 +25,7 @@ body, html {
 a:active, a:visited {
   color: var(--medium2);
 }
+
 /* HEADER  */
 
 .header .brand {

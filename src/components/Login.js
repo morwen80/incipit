@@ -32,7 +32,7 @@ if (currentUser) {
       <h6>New here? <Link to='/signup'>Create an account</Link>.</h6>
 
       <form onSubmit={handleLogin}>
-        <div class="form-group">
+        <div className="form-group">
           <label> Email </label>
           <input className="form-control" name="email" type="email" placeholder="email" />
         </div>

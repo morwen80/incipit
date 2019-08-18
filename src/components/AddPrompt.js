@@ -34,7 +34,7 @@ class AddPrompt extends React.Component {
       <div className="newPrompt container">
       {this.state.newP}
           <form onSubmit={this.addNewPrompt}>
-          <div class="form-group">
+          <div className="form-group">
 
             <label> Add your prompt </label>
             <textarea
