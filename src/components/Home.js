@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+import SinglePrompt from './SinglePrompt'
 
 class Home extends React.Component {
  state = {
@@ -8,9 +9,7 @@ class Home extends React.Component {
  }
 
 
-
 randomPrompt = (e) => {
-
     e.preventDefault();
 
     fetch('http://localhost:3000/prompts')
@@ -22,9 +21,9 @@ randomPrompt = (e) => {
     )
   }
 
-
-
   render(){
+
+
     return(
       <div className="home container">
 
@@ -34,8 +33,13 @@ randomPrompt = (e) => {
         </div>
           <div className="main">
             <div className="promptSpace">
-              {this.state.hello}
-              {this.state.prompt.prompt}
+              {this.state.hello === "" ?
+
+              <SinglePrompt
+                prompt={this.state.prompt}
+              /> :
+            this.state.hello
+            }
             </div>
           </div>
     </div>

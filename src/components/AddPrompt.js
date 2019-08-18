@@ -33,7 +33,6 @@ class AddPrompt extends React.Component {
   render(){
     return(
       <div className="newPrompt container">
-      {this.state.newP}
           <form onSubmit={this.addNewPrompt}>
           <div className="form-group">
 
@@ -45,8 +44,15 @@ class AddPrompt extends React.Component {
             />
           </div>
           <div>
-          <label> Writer
-            <input className="form-control" name="writer" type="writer" placeholder="writer" value={this.state.writer} />
+          <label>Writer
+            <input
+
+              className="form-control input-lg"
+              name="writer"
+              placeholder="writer"
+              value={this.state.writer}
+              onChange={this.handleChange}
+            />
           </label>
           </div>
             <button type="submit" className="btn newPromptBtn">submit</button>

@@ -103,10 +103,15 @@ a:active, a:visited {
 }
 
 /* NEW PROMPT */
+.newPrompt {
+  width: 50%;
+}
 .newPrompt label {
   color: var(--dark1);
   font-size: 1.5rem;
+  font-weight: 700;
 }
+
 
 .newPromptBtn {
   background-color: var(--medium2);
@@ -119,7 +124,7 @@ a:active, a:visited {
     width: 100%;
   }
 
-  .login, .signup {
+  .login, .signup, .newPrompt {
     width: 100%;
   }
 }
