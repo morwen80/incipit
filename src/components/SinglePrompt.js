@@ -15,6 +15,4 @@ const SinglePrompt = (props) => {
   )
 }
 
-
-
 export default SinglePrompt
