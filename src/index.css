@@ -148,6 +148,24 @@ a:active, a:visited {
   font-weight: 700;
 }
 
+/* PAGE NOT FOUND */
+.notFound h5 {
+  font-size: 2rem;
+  color: var(--dark1);
+  font-weight: 700;
+}
+.notFound h6 {
+  font-size: 1.3rem;
+  line-height: 200%;
+}
+.blueDotRoad {
+  border-bottom: 2px dashed var(--dark1);
+  transition: 1s;
+}
+.blueDotRoad:hover {
+  background-color: var(--light2);
+}
+
 
 /* MEDIA QUERIES =============== */
 @media only screen and (max-width: 600px) {
