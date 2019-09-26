@@ -30,6 +30,8 @@ a:active, a:visited {
   margin-top: 1rem;
   background-color: var(--medium2);
   color: var(--light1);
+  border-radius: 5px;
+  padding: .1rem .7rem;
 }
 
 .newPromptBtn:hover, .loginBtn:hover, .signupBtn:hover {
