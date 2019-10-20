@@ -23,7 +23,7 @@ class AddPrompt extends React.Component {
       writer: this.state.writer,
       likes: 1
     }
-    fetch("https://incipit-server.herokuapp.com/prompts", {
+    fetch("http://localhost:5000/prompts", {
       method: 'POST',
       headers: {
     'Accept': 'application/json',
